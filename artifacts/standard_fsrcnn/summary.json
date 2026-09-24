@@ -1,0 +1,14 @@
+{
+  "model": "Standard FSRCNN(56,12,4) x2, 9x9 transposed convolution",
+  "dataset_train": "D:\\Codex File\\dialogue file\\github\\a_dui_dui_dui\\.data\\t91",
+  "dataset_eval": "D:\\Codex File\\dialogue file\\github\\a_dui_dui_dui\\.data\\set5",
+  "epochs": 50,
+  "parameters": 12809,
+  "macs_per_lr_pixel": 12464,
+  "gmac_per_960x540_frame": 6.4613376,
+  "gmac_per_second_30fps": 193.840128,
+  "bicubic_psnr_db": 32.639829579221576,
+  "bicubic_ssim": 0.9278165385771036,
+  "standard_fsrcnn_psnr_db": 33.976774278535764,
+  "standard_fsrcnn_ssim": 0.9386113640384837
+}

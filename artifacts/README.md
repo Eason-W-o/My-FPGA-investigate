@@ -7,6 +7,7 @@ This directory keeps only final, inspectable, or hardware-useful artifacts. One-
 | `evaluation/` | Lightweight-model and Bicubic Set5 metrics | Lightweight quality baseline |
 | `model/` | FP32 lightweight checkpoint, training log, model contract | Software inference and quantization source |
 | `original_fsrcnn_s/` | Original FSRCNN-s checkpoint, 50-epoch log, Set5 metrics | Paper-reproduction evidence |
+| `standard_fsrcnn/` | Standard FSRCNN(56,12,4) checkpoint, 50-epoch log, Set5 metrics | Higher-cost paper-reproduction evidence |
 | `model_comparison.csv` / `.md` | Same-protocol comparison of three methods | PPT/report citation |
 | `video_demo/` | 540P-to-1080P software video demo | Demo and pipeline validation |
 | `quant/` | INT8 weights, INT32 biases, Q1.15 PReLU, Q31 requantization data | Verilog/RTL initialization |
@@ -26,4 +27,3 @@ This directory keeps only final, inspectable, or hardware-useful artifacts. One-
 - `frame_metrics.csv`, `summary.json`: per-frame/average metrics and runtime information.
 
 It validates the pipeline only and is not a substitute for a formal evaluation on a native 1080P video or an offline HR-ground-truth dataset.
-

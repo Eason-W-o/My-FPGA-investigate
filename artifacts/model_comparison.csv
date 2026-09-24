@@ -1,4 +1,5 @@
 ﻿model,architecture,parameters,gmac_per_frame_960x540,psnr_db,ssim,deployment_role
 Bicubic,traditional interpolation,0,0.0,32.639829579221576,0.9278165385771036,baseline
 Original FSRCNN-s,"FSRCNN-s(32,5,1) + 9x9 deconvolution",4086,2.0409408,33.8217268974348,0.9385238995364584,software quality reference
+Standard FSRCNN,"FSRCNN(56,12,4) + 9x9 deconvolution",12809,6.4613376,33.976774278535764,0.9386113640384837,higher-cost software reference
 Team lightweight model INT8,"d=16,s=8,m=1 + 5x5 PixelShuffle",2932,1.4681088,34.01902829937292,0.9378537093871362,FPGA implementation target
