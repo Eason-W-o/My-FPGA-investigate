@@ -23,3 +23,11 @@ temp/
 Thumbs.db
 .vscode/
 .idea/
+artifacts/original_fsrcnn_s_smoke/
+artifacts/original_fsrcnn_s_train.err.log
+artifacts/original_fsrcnn_s_train.out.log
+artifacts/video_demo_pip.err.log
+artifacts/video_demo_pip.out.log
+artifacts/video_demo/comparison_preview.png
+artifacts/video_demo/run.err.log
+artifacts/video_demo/run.out.log

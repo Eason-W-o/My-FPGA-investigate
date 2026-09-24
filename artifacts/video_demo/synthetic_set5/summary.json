@@ -1,0 +1,19 @@
+{
+  "input": "artifacts\\video_demo\\synthetic_set5_source_1080p.mp4",
+  "source_policy": "resized_to_1920x1080_if_needed",
+  "input_to_model": "960x540 Y, Bicubic downsampling",
+  "output": "1920x1080 Y with Bicubic Cb/Cr",
+  "frames": 15,
+  "video_fps": 6.0,
+  "processing_fps": 2.5681232793656887,
+  "device": "cuda",
+  "metrics_average": {
+    "frame": "AVERAGE",
+    "bicubic_psnr_db": 40.24191122416284,
+    "bicubic_ssim": 0.9927796053186329,
+    "original_fsrcnn_s_psnr_db": 40.49955793179127,
+    "original_fsrcnn_s_ssim": 0.9917247519591198,
+    "team_light_int8_psnr_db": 40.273954470866684,
+    "team_light_int8_ssim": 0.9840176160308065
+  }
+}

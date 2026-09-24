@@ -1,4 +1,6 @@
 h5py>=3.12
+imageio>=2.37
+imageio-ffmpeg>=0.6
 numpy>=2.0
 Pillow>=10.0
 pytest>=8.0

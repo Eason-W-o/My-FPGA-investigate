@@ -1,0 +1,103 @@
+{
+  "project": "960x540 Y8 to 1920x1080 Y8 at 30 fps",
+  "frame_path": {
+    "Y8": {
+      "input_active_mb_per_s": 15.552,
+      "output_active_mb_per_s": 62.208,
+      "stream_sum_mb_per_s": 77.76,
+      "ddr_write_read_roundtrip_mb_per_s": 155.52,
+      "ddr_with_1080p60_repeat_read_mb_per_s": 217.728
+    },
+    "YCbCr420_8bit": {
+      "input_active_mb_per_s": 23.328,
+      "output_active_mb_per_s": 93.312,
+      "stream_sum_mb_per_s": 116.64,
+      "ddr_write_read_roundtrip_mb_per_s": 233.28,
+      "ddr_with_1080p60_repeat_read_mb_per_s": 326.592
+    },
+    "YCbCr422_8bit": {
+      "input_active_mb_per_s": 31.104,
+      "output_active_mb_per_s": 124.416,
+      "stream_sum_mb_per_s": 155.52,
+      "ddr_write_read_roundtrip_mb_per_s": 311.04,
+      "ddr_with_1080p60_repeat_read_mb_per_s": 435.456
+    },
+    "RGB888": {
+      "input_active_mb_per_s": 46.656,
+      "output_active_mb_per_s": 186.624,
+      "stream_sum_mb_per_s": 233.28,
+      "ddr_write_read_roundtrip_mb_per_s": 466.56,
+      "ddr_with_1080p60_repeat_read_mb_per_s": 653.184
+    }
+  },
+  "model": {
+    "mac_per_frame": 1468108800,
+    "gmac_per_s_at_30fps": 44.043264,
+    "mac_per_lr_pixel": 2832.0,
+    "ideal_mac_units_by_clock_mhz": {
+      "100": 440.43264,
+      "150": 293.62176,
+      "180": 244.6848,
+      "200": 220.21632
+    },
+    "layers": [
+      {
+        "name": "feature_5x5_1to16",
+        "mac_per_frame": 207360000,
+        "share_percent": 14.124293785310735,
+        "gmac_per_s_at_30fps": 6.2208
+      },
+      {
+        "name": "shrink_1x1_16to8",
+        "mac_per_frame": 66355200,
+        "share_percent": 4.519774011299435,
+        "gmac_per_s_at_30fps": 1.990656
+      },
+      {
+        "name": "mapping_3x3_8to8",
+        "mac_per_frame": 298598400,
+        "share_percent": 20.338983050847457,
+        "gmac_per_s_at_30fps": 8.957952
+      },
+      {
+        "name": "expand_1x1_8to16",
+        "mac_per_frame": 66355200,
+        "share_percent": 4.519774011299435,
+        "gmac_per_s_at_30fps": 1.990656
+      },
+      {
+        "name": "subpixel_5x5_16to4",
+        "mac_per_frame": 829440000,
+        "share_percent": 56.49717514124294,
+        "gmac_per_s_at_30fps": 24.8832
+      }
+    ]
+  },
+  "intermediate_feature_maps": {
+    "bytes_per_frame_if_each_map_written_once": 51840000,
+    "mb_per_frame_if_each_map_written_once": 51.84,
+    "ddr_roundtrip_gb_per_s_at_30fps": 3.1104,
+    "maps": {
+      "feature_16ch_int16": 16588800,
+      "shrink_8ch_int16": 8294400,
+      "mapping_8ch_int16": 8294400,
+      "expand_16ch_int16": 16588800,
+      "subpixel_4ch_uint8": 2073600
+    }
+  },
+  "minimum_line_buffers": {
+    "total_bytes": 157440,
+    "total_kib": 153.75,
+    "buffers": {
+      "feature_5x5_y8_4_lines": 3840,
+      "mapping_3x3_8ch_int16_2_lines": 30720,
+      "subpixel_5x5_16ch_int16_4_lines": 122880
+    },
+    "note": "Excludes border handling, FIFOs, banking, alignment, and timing buffers."
+  },
+  "ddr3_x32_theoretical_examples_gb_per_s": {
+    "800_MTps": 3.2,
+    "1066_MTps": 4.264,
+    "1600_MTps": 6.4
+  }
+}
