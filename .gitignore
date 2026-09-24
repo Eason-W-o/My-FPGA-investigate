@@ -31,3 +31,4 @@ artifacts/video_demo_pip.out.log
 artifacts/video_demo/comparison_preview.png
 artifacts/video_demo/run.err.log
 artifacts/video_demo/run.out.log
+artifacts/video_bandwidth_check/
